@@ -6,7 +6,7 @@
 - Branch erstellen: git branch {name der branch}
 - Auf Branch wechseln: git checkout {name der branch}
 - Commit:
-- 1. git add {namen der neuen dateien oder "*" für all}
+- 1. git add {namen der neuen dateien oder "*" für alle}
 - 2. git commit -m {commit message}
 - Mergen: in der branch, in die hineingemerged werden soll: git merge {name der anderen branch}
 - WICHTIG: Nach dem Mergen immer testen, ob alles noch funktioniert!
@@ -21,3 +21,17 @@
 - Die main-branch muss immer funktionieren! D.h. immer ausführlich lokal testen, bevor auf die main gepusht wird.
 - 1. Sind alle Änderungen vorheriger commits noch da?
 - 2. Funktioniert noch alles, was funktioniert hat, bevor ich gemerged habe?
+
+- Bevor auf die main gemerged wird, immer zuerst folgendes machen:
+- 1. main branch pullen
+- 2. main lokal in die aktuelle branch mergen
+- 3. Testen!
+- Erst wenn alles auf der branch funktioniert, pushen
+- Änderungen mit zweiter Person reviewen, und wenn alles gut ist:
+- lokal auf die main mergen
+- main pushen
+
+- Neue branches immer thematisch benennen: z.B. "Seitennavigation"
+
+- Best Practices für commit messages:
+- 1. https://chris.beams.io/posts/git-commit/
